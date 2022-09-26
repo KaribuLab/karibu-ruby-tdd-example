@@ -16,4 +16,6 @@ jobs:
       - name: Install Gems
         run: bundle install
       - name: Run Tests
-        run: rspec
+        run: |
+          export PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
+          rspec
